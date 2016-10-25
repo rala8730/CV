@@ -26,7 +26,7 @@
 \documentclass[10pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
 \usepackage{lmodern}
 \usepackage{tasks}
-
+\pagenumbering{gobble}
 %\usepackage{hyperref}
 %\definecolor{darkblue}{rgb}{0.0,0.0,0.3}
 %\hypersetup{colorlinks,breaklinks,linkcolor=darkblue,urlcolor=darkblue,anchorcolor=darkblue,citecolor=darkblue}
@@ -42,7 +42,6 @@
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION SECTION
 %----------------------------------------------------------------------------------------
-\vspace{-10mm}
 \firstname{Rasmi} % Your first name
 \familyname{Lamichhane} % Your last name
 % All information in this block is optional, comment out any lines you don't need
@@ -59,89 +58,101 @@
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
-\vspace{-21mm}
+%\vspace{-21mm}
 \section{Education}
-\cventry{\textnormal{2012-Current}}{\textnormal{Bachelor of Computer Science}}{The University of Colorado, Boulder}{}{}{}  % Arguments not required can be left empty
+\cventry{}{Bachelor of Computer Science}{\href{http://www.colorado.edu/}{The University of Colorado, Boulder}}{2012-Current}{}{}  % Arguments not required can be left empty
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
-\vspace{-5mm}
 \section{Experience}
-\vspace{-1mm}
-\cventry{\textnormal{Fall 2016-Present}}{\textnormal{Student Android Developer}}{\textsc{Laboratory For Playful Computation}}{\textnormal{Boulder, CO}}{}{\textnormal{}}
-\vspace{-1mm}
-\cventry{\textnormal{Fall 2015-Fall 2016}}{\textnormal{Student Assistant Digital Lab}}{\textsc{University of Colorado Boulder Libraries}}{\textnormal{Boulder, CO}}{}{\textnormal{Digitaling different kind of archival material and processing it.}}
-%\hfill \break
-\cventry{\textnormal{Summer 2015}}{\textnormal{Student Assistant LIT}}{\textsc{University of Colorado Boulder Libraries}}{\textnormal{Boulder, CO}}{}{\textnormal{Web help desk, Troubleshooting software and hardware problems, image computer, printers problems and etc.}}
+\cventry{}{\href{http://atlas.colorado.edu/lpc/blockyTalky/}{BlockyTalky}}{\href{http://atlas.colorado.edu/lpc/}{Laboratory For Playful Computation, ATLAS Institute, CU Boulder}}{Fall 2016-Present}{}{
+\begin{itemize}
+		\item \textbf{Research Assistant} for \href{http://atlas.colorado.edu/lpc/blockyTalky/}{BlockyTalky}, a
+		project empowers kids to learn computer science by creating networked devices and
+		applications
+		%\item 
+	\end{itemize}}
+	%\textnormal{Digitaling different kind of archival material and processing it.}
+\cventry{}{Student Assistant Digital Lab $\&$ Library IT}{\textsc{University of Colorado Boulder Libraries}}{Summer 2015-Fall 2016}{}{
+\begin{itemize}
+		\item Worked on digitizing archival material and IT Supported web help desk, troubleshooting software and hardware problems.
+	\end{itemize}}
+
+%\cventry{\textnormal{Summer 2015}}{\textnormal{Student Assistant LIT}}{\textsc{University of Colorado Boulder Libraries}}{\textnormal{Boulder, CO}}{}{\textnormal{Web help desk, Troubleshooting software and hardware problems, image computer, printers problems and etc.}}
 
 
 %----------------------------------------------------------------------------------------
 %	COMPUTER SKILLS SECTION
 %----------------------------------------------------------------------------------------
-\vspace{-5mm}
 \section{Computer Skills}
-\vspace{-2mm}
-\cvitem{\textnormal{Language}}{C/C++, Python, Java, HTML/CSS, Mathematica, SQL, Bash Shell Scripting, Regex}{}{} 
-\cvitem{\textnormal{Tools}}{Unit Testing, Pair Programming, Rest and Soap, Agile/Scrum methodology, Waterfall, Databases}
-\cvitem{\textnormal{Extra}}{Github, Adobe Photoshop, Freehand, Microsoft Office}
-\vspace{-5mm}
+\cvitem{\textnormal{Language}}{C/C++, Python, Java, HTML/CSS, Mathematica, SQL, Bash Shell Scripting, Regex, Scala, Android}{}{} 
+\cvitem{\textnormal{Tools}}{Rest and Soap, Waterfall, Databases, Puppet, Github, Adobe Photoshop, Adobe Bridge, and Abbyy Scan Station}{}{}
+\cvitem{\textnormal{Software Methodology}}{Pair Programming, Agile/Scrum methodology}{}{}
+
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+
 \section {Projects}
-\vspace{-1mm}
-\cventry{\href{https://youtu.be/TKgePysJxr0}{\textnormal{https://youtu.be/TKgePysJxr0}}{}}{}{\textsc{\href{https://git.io/v64Lp}{Sparki Pill Pusher}}}{\href{https://git.io/v64Lp}{\textnormal{https://git.io/v64Lp}}}{}{}
+\cventry{Source - \href{https://git.io/v64Lp}{https://git.io/v64Lp} $\vert$ Demo - \href{https://youtu.be/TKgePysJxr0}{https://youtu.be/TKgePysJxr0}}{Introduction to Robotics}{Sparki Pill Pusher}{Summer 2016}{}{
 \begin{itemize}
-\vspace{-2mm}
-\item{Programmed a robot named Sparki. Sparki follows specified paths to fetch 1 of 5 bottles.} 
-\item{It uses light sensors to make sure that it stays on the defined path, and uses its ultrasonic sensors to find the fastest path to the bottle at an optimal angle.} 
-\item{Sparki uses its RFID scanner to scan the pill bottle, making sure that the unique tag  matches with the specified bottle number. If an incorrect bottle is approached, Sparki will beep, display a message that it is incorrect, and move back to the start to await more instructions.}
+\item{Programmed \textbf{Sparki}, a programmable \textbf{Arduino} robot, to follow specified paths to fetch RFID tagged bottles using an \textbf{RFID} scanner.} 
+\item{Robot uses light sensors to ensure that it stays on track, and ultrasonic sensors to find the fastest path to the bottle.} 
+\item{If an incorrect bottle is approached, Sparki will display an error message, and move back to the start to await further instructions.}
+\end{itemize}}
+
+\cventry{Source - \href{https://git.io/v68ax}{https://git.io/v68ax} $\vert$ Demo - \href{https://youtu.be/K5FWMMMd8d4}{https://youtu.be/K5FWMMMd8d4}}{Software Development Methods and Tools }{Python Data Visualization}{Summer 2016}{}{
+\begin{itemize}
+\item{Created a web page using \textbf{HTML}, \textbf{Python}, and \textbf{mySQL} that visualizes Carbon Emission from various states over past two decades.}
+%\item{Displays an animated Chloropeth map to visualize Carbon Dioxide Emmissions per state in the US over the past two decades.}
+\item{The states are color-coded according to the annual amount of emissions per state in million metric tons of carbon dioxide, and a cursor hover over a particular state will display a breakdown of that state's Carbon emissions per type in petroleum, coal, and gas.}
+\end{itemize}}
+
+
+% \cventry{}{}{\textsc{\href{https://git.io/viN7J}{Weather Data visualization}}}{\href{https://git.io/viN7J}{\textnormal{https://git.io/viN7J}}}{}{}
+% \begin{itemize}
+% \item{Implemented a webpage that shows the weather across the United States. Used python programming language to grab the API so that it shows in the webpage. Used html for layouting and coloring the states and python for implementing different required functions.}
+% \end{itemize}
+
+
+\cventry{Source - \href{https://git.io/viOZW}{https://git.io/viOZW}}{Learning Android}{\href{https://git.io/viOZW}{Android Inventory App}}{Fall 2016}{}{
+\begin{itemize}
+\item{Implemented a inventory app using \textbf{Android Studio} with \textbf{Java} and \textbf{XML}. Displays image, price and quantity of the each item and calculates the overall amount of total items. Used various textviews, image views, buttons, and layouts.}
+\item{User can add each item by pressing the plus button and remove the item by pressing - button. Textview shows the count of the items and price for each in the screen and finally submit shows the overall of cost of the transaction.}
+\end{itemize}}
+
+
+\cventry{Source - \href{https://git.io/viNQe}{https://git.io/viNQe}}{Numerical Computation}{\href{https://git.io/viNQe}{Rootfinding}}{Fall 2016}{}{
+\begin{itemize}
+\item{Implemented Root-finding in \textbf{Python} to implement \textbf{Newton's} method, with line search and quadratic approximation using python dictionary and tuple. Gives user a sense of difference between which function is diverging and conversing faster.}
+\end{itemize}}
+
+
+\cventry{Source - \href{https://git.io/viNQI}{https://git.io/viNQI}}{Data Structures}{\href{https://git.io/viNQI}{Battleship}}{Summer 2015}{}{}
+\begin{itemize}
+\item{Implemented the battleship board game. The computer will hold the ships in the grid and the player will have to guess where those ships are. Used C++ classes, loops and different methods. User can choose the size of the board location of the ship.}
 \end{itemize}
 
-%\hfill \break
-\cventry{\href{https://youtu.be/K5FWMMMd8d4}{\textnormal{https://youtu.be/K5FWMMMd8d4}}{}}{}{\textsc{\href{https://git.io/v68ax}{Python Data visualization}}}{\href{https://git.io/v68ax}{\textnormal{https://git.io/v68ax}}}{}{}
+
+
+%\cventry{\href{https://git.io/viNQ0}{https://git.io/viNQ0}}{Data Structures}{\href{https://git.io/viNQ0}{Bag}}{Summer 2015}{}{
+%\begin{itemize}
+%\item{Implemented a bag of array and lists. Used \textbf{C++} array, single and double linked list with loops, pointers, classes and member functions. The features are adding and removing items in the pocket of magic, potion and good depending on user want to add.}
+%\end{itemize}}
+
+
+\cventry{\href{https://git.io/viNQA}{https://git.io/viNQA}}{Data Structures}{\href{https://git.io/viNQA}{Stacks and queues}}{Summer 2015}{}{}
 \begin{itemize}
-\vspace{-6mm}
-\item{Created a webpage using HTML, Python, and mySQL.}
-\item{Displays an animated Chloropeth map to visualize Carbon Dioxide Emmissions per state in the US over the past two decades.}
-\item{The states are color-coded according to the annual amount of emissions per state in million metric tons of carbon dioxide, and a cursor hover over a particular state will display a breakdown of that state's Carbon emissions per type in petroleum, coal, and gas.}
-\end{itemize}
-\cventry{}{}{\textsc{\href{https://git.io/viN7J}{Weather Data visualization}}}{\href{https://git.io/viN7J}{\textnormal{https://git.io/viN7J}}}{}{}
-\begin{itemize}
-\vspace{-6mm}
-\item{Implemented a webpage that shows the weather across the United States. Used python programming language to grab the API so that it shows in the webpage. Used html for layouting and coloring the states and python for implementing different required functions.}
-\end{itemize}
-%\hfill \break
-\cventry{}{}{\textsc{\href{https://git.io/viOZW}{Android Inventory App}}}{\href{https://git.io/viOZW}{\textnormal{https://git.io/viOZW}}}{}{}
-\begin{itemize}
-\vspace{-6mm}
-\item{Implemented a inventory app using Android Studio with Java and XML. Displays image, price and quantity of the each item and calculates the overall amount of total items. Used various of textview, image view, buttons, linear and relative layout.}
-\item{User can add each item by pressing the + button and remove the item by pressing - button. Textview shows the count of the items and price for each in the screen and finally submit shows the overall of cost of the transaction.}
-\end{itemize}
-\cventry{}{}{\textsc{\href{https://git.io/viNQe}{Rootfinding}}}{\href{https://git.io/viNQe}{\textnormal{https://git.io/viNQe}}}{}{}
-\begin{itemize}
-\vspace{-6mm}
-\item{Implemented the Root-finding in python using newton's method, newton's method with line search and cubic methode. Used python programming with Dictionary and Tuple. Gives user a sence of difference between which function is diverging and conversing faster.}
-\end{itemize}
-\cventry{}{}{\textsc{\href{https://git.io/viNQI}{Battleship}}}{\href{https://git.io/viNQI}{\textnormal{https://git.io/viNQI}}}{}{}
-\begin{itemize}
-\vspace{-6mm}
-\item{Implemented the battleship board game. The computer will hold the ships in the grid and the player will have to guess where those ships are. Used C++ classes, loops and different methodes. User can choose the size of the board location of the ship.}
-\end{itemize}
-\cventry{}{}{\textsc{\href{https://git.io/viNQ0}{Bag}}}{\href{https://git.io/viNQ0}{\textnormal{https://git.io/viNQ0}}}{}{}
-\begin{itemize}
-\vspace{-6mm}
-\item{Implemented a bag of array and lists. Used C++ array, single and double linked list with classes, loops, pointers, and different methodes. The features are adding and removing the item in the pocket of magic, potion and good depending on user wants to add.}
-\end{itemize}
-\cventry{}{}{\textsc{\href{https://git.io/viNQA}{Stacks and queues}}}{\href{https://git.io/viNQA}{\textnormal{https://git.io/viNQA}}}{}{}
-\begin{itemize}
-\vspace{-6mm}
-\item{Implemented stacks and queues of array, single linklist and double linked list. Used C++ array, single and double linked list with classes, loops, pointers, and different methodes. Features are adding and removing and moving element depend on users desire.}
+\item{Implemented stacks and queues with array, single linked list and double linked list. Used \textbf{C++} arrays, single and double linked lists, loops, pointers, classes and  member functions.}
 \end{itemize}
 %----------------------------------------------------------------------------------------
 %	INTERESTS SECTION
 %----------------------------------------------------------------------------------------
-\vspace{-5mm}
-\section{Extra Curricular}
-\vspace{-2mm}
-ALP(Applied Leadership Program),CLP(Core Leadership Program),Graphic Designing,Westminister Public Library(Volunteer in the computer class)2014, CUWIC(Women in Computing)
+
+%\section{Extra Curricular}
+%Applied Leadership Program, Core Leadership Program, Graphic Designing, CU Women in Computing
+%(Volunteer in the computer class) 2014, CUWIC(Women in Computing)
 
 
 %----------------------------------------------------------------------------------------
